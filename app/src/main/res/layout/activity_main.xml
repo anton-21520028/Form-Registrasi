@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -67,9 +67,9 @@
         android:id="@+id/perempuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Perempuan"
+        android:text="Perempuan"/>
     </RadioGroup>
-    <!-- umur--->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
     <TextView
         android:id="@+id/viewProdi"
         android:layout_height="0dp"
-        android:layout_width="0dp"
+        android:layout_width="0dp"/>
 
 <!--Toggle Asrama-->
     <TextView
@@ -143,5 +143,5 @@
             android:padding="15dp"
             android:text="SUBMIT"
             android:onClick="submitRegis"/>
-
-</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

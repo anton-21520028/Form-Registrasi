@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Form Registrasi</string>
-    <string-array name="daftraProdi"
+    <string-array name="daftraProdi">
     <item>Akuntansi</item>
     <item>MUltimedia</item>
     <item>Teknik Komputer dan Jaringan</item>
@@ -8,5 +8,5 @@
     <item>Teknik Kendaraan Ringan</item>
     <item>Teknik dan Bisnis Sepeda Motor</item>
     <item>Tata Boga</item>
-
+    </string-array>
 </resources>
