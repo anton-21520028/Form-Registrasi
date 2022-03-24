@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!-- Nama Lengkap-->
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:hint="Masukan Nama Lengkap"
+        android:inputType="textPersonName|textCapWords"
+        android:nextFocusDown="@id/email"/>
+    <!--email-->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:hint=" Masukan Email"
+        android:inputType="textEmailAddress"
+        android:cursorVisible="false"
+        android:nextFocusDown="@id/password"/>
+    <!--password-->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:hint="Masukan Password"
+        android:inputType="textPassword"
+        android:cursorVisible="false"/>
+    <!--jenis kelamin-->
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"/>
+    <RadioGroup
+        android:id="@+id/jenisKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:checkedButton="@id/laki">
+        <RadioButton
+            android:id="@+id/laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki"/>
+    <RadioButton
+
+        android:id="@+id/perempuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perempuan"
+    </RadioGroup>
+    <!-- umur--->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umur ( 16 tahun sampai dengan 25 tahun)"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"/>
+    <SeekBar
+
+        android:id="@+id/umur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:min="15"
+        android:max="25"
+        android:progress="17"/>
+    <TextView
+        android:id="@+id/viewUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="17 Tahun"
+        android:textSize="15dp"/>
+
+    <!---SpinNer Prodi-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program Studi"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"/>
+    <Spinner
+        android:id="@+id/prodi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/daftraProdi"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/viewProdi"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+
+<!--Toggle Asrama-->
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tinggal Asrama"
+    android:textSize="18dp"
+    android:layout_marginTop="10dp"
+    android:padding="15dp"/>
+    <ToggleButton
+        android:id="@+id/toggleAsrama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Tidak"
+        android:textOn="Ya"
+        android:padding="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/submitRegis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="SUBMIT"
+            android:onClick="submitRegis"/>
+
+</LinearLayout>
